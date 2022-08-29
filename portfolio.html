@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Dancing+Script">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+		<style>
+		
+			.dropdowntext { 
+			color: #0252c4; 
+			}
+			
+			.navbar { 
+			padding-left: 1rem; 
+			}
+
+			.signature {
+				font-family: 'Dancing Script', serif;
+				font-size: 1.5rem;
+			}
+			
+			body { 
+				background-color: #FFFFFF;
+				font-family: 'Noto Serif', serif;
+				margin-top: 3.5rem;
+			}
+
+			.custom_button {
+				width: 25rem;	
+			}
+
+			.color_button {
+				background: rgb(0,71,171,0.67);
+				border-color: rgb(0,71,171,0.67);
+				
+				margin-top: 4rem;
+			}
+			
+			.color_button1 {
+				background: rgb(0,71,171,0.67);
+				border-color: rgb(0,71,171,0.67);
+				
+				margin-top: 3rem;
+				margin-bottom: 1rem;
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+				min-width: 30vw;
+				height: fit-content;
+				font-size: 4vw;
+			}
+			
+			.social_buttons {
+				margin-top: 1.5rem;
+				margin-bottom: 1.1rem;
+			}
+			
+			.secondary_social_buttons {
+				margin-left: 5rem;
+				margin-right: 5rem;
+				margin-top: 2rem;
+				color: rgb(0,71,171,0.67);
+			}
+			
+			.btn-primary:focus,
+			.btn-primary:hover,
+			.btn-primary:active,
+			.btn-primary.active {
+				background-color: #487eca;
+				border-color: #487eca;
+				box-shadow: 0 0 0 0.2rem #e9e3e5;
+			}		
+			
+			.btn-group .btn-secondary:active,
+			.btn-secondary:focus,
+			.btn-secondary:hover,
+			.btn-secondary:active,
+			.btn-secondary.active {
+				background-color: #487eca;
+				border-color: #487eca;
+				box-shadow: 0 0 0 0.2rem #e9e3e5; 
+			}
+			
+			
+			.custom_card {
+				width: 100%;
+				height: 19vw;
+				background: #93B1E5;
+				margin: 0 auto;
+				float: none; 
+				margin-top: 0px;
+				min-height: fit-content;
+				overflow: hidden;
+				line-height: normal;
+				border-radius: 0rem;				
+			}	
+
+			.custom_card_contacts {
+				width: 55vw;
+				height: 15vw;
+				background: rgb(0,71,171,0.67);
+				margin: 0 auto;
+				float: none; 
+				padding-left: 2rem;
+				padding-right: 2rem;
+				
+				min-width: fit-content;
+				min-height: fit-content;
+				overflow: hidden;
+				line-height: normal;			
+			}				
+
+			.custom_card0 {
+				width: 100%;
+				height: fit-content;
+				background: #93B1E5;
+				margin: 0 auto;
+				float: none; 
+				margin-top: 4rem;
+				min-height: fit-content;
+				overflow: hidden;
+				line-height: normal;
+				border-radius: 0rem;	
+				margin-bottom: 4rem;
+			}
+
+			.custom_card01 {
+				width: 100%;
+				height: fit-content;
+				background: #93B1E5;
+				margin: 0 auto;
+				float: none; 
+				margin-top: 2rem;
+				min-height: fit-content;
+				overflow: hidden;
+				line-height: normal;
+				border-radius: 0rem;
+				margin-bottom: 4rem;					
+			}
+				
+			.custom_card1 {
+			    background: rgb(0,71,171,0.67);
+				margin: 0 auto;
+				
+				padding-top: 0.5rem;
+				padding-bottom: 0.3rem;
+				padding-left: 1rem;
+				padding-right: 1rem;
+				width: 6vw;
+				min-width: fit-content;
+				min-height: fit-content;
+				float: none;
+				overflow: hidden;
+				height: fit-content;
+				font-size: 4vw;	
+				margin-top: 2rem;
+				margin-bottom: 2rem;			
+			}	
+			
+			.custom_cardtext_contacts {
+				font-size: 4vw;
+				text-overflow: clip;
+				white-space: normal;
+				line-height: normal;
+				font-weight: 650;	
+				max-height: 100%;
+				overflow: hidden;	
+			}	
+			
+			.custom_cardtext1_contacts {
+				font-size: 1.65vw;
+				text-overflow: clip;
+				white-space: normal;
+				line-height: normal;
+				max-height: 100%;
+				overflow: hidden;				
+			}				
+		
+			
+			@media only screen and (max-width:960px) {
+			
+				body{			
+				background-color: #FFFFFF;
+					}		
+					
+				.navbar { 
+				padding-left: 1rem; 
+				}
+			
+				.dropdowntext { 
+				color: #0252c4; 
+				}
+
+				.custom_card {
+					width: 100%;
+					background: #93B1E5;
+					margin: 0 auto;
+					float: none; 
+					margin-top: 0px;
+					min-height: 40vw;
+					overflow: hidden;
+					line-height: normal;
+					border-radius: 0rem;				
+				}	
+
+				.custom_card_contacts {
+					width: 55vw;
+					height: 20vw;
+					background: rgb(0,71,171,0.67);
+					margin: 0 auto;
+					float: none; 
+					padding-left: 1rem;
+					padding-right: 1rem;
+					
+					min-width: fit-content;
+					min-height: fit-content;
+					overflow: hidden;
+					line-height: normal;			
+				}		
+				
+				.custom_card0 {
+					width: 100%;
+					height: fit-content;
+					background: #93B1E5;
+					margin: 0 auto;
+					float: none; 
+					margin-top: 4rem;
+					min-height: fit-content;
+					overflow: hidden;
+					line-height: normal;
+					border-radius: 0rem;
+					margin-bottom: 4rem;					
+				}
+				
+				.custom_card01 {
+					width: 100%;
+					height: fit-content;
+					background: #93B1E5;
+					margin: 0 auto;
+					float: none; 
+					margin-top: 0rem;
+					min-height: fit-content;
+					overflow: hidden;
+					line-height: normal;
+					border-radius: 0rem;
+					margin-bottom: 4rem;					
+				}
+				
+				.custom_card1 {
+					background: rgb(0,71,171,0.67);
+					margin: 0 auto;
+					
+					padding-top: 0.5rem;
+					padding-bottom: 0.3rem;
+					padding-left: 1rem;
+					padding-right: 1rem;
+					width: 6vw;
+					min-width: fit-content;
+					min-height: fit-content;
+					float: none;
+					overflow: hidden;
+					height: fit-content;
+					font-size: 4vw;	
+					margin-top: 2rem;
+					margin-bottom: 2rem;			
+				}				
+				
+				.custom_cardtext_contacts {
+					font-size: calc(13px + 2.3vw);
+					text-overflow: clip;
+					white-space: normal;
+					line-height: normal;
+					font-weight: 650;	
+					max-height: 100%;
+					overflow: hidden;	
+				}	
+				
+				.custom_cardtext1_contacts {
+					font-size: calc(2.5px + 2.3vw);
+					text-overflow: clip;
+					white-space: normal;
+					line-height: normal;
+					max-height: 100%;
+					overflow: hidden;				
+				}				
+				
+				.custom_button {
+					width: 15rem;
+					margin: auto;
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+				}
+
+				.color_button {
+					background: rgb(0,71,171,0.67);
+					border-color: rgb(0,71,171,0.67);
+					
+				}
+				
+				.color_button1 {
+					background: rgb(0,71,171,0.67);
+					border-color: rgb(0,71,171,0.67);
+					
+					margin-top: 1rem;
+					margin-bottom: 1rem;
+				}
+				
+				.color_button {
+					background: rgb(0,71,171,0.67);
+					border-color: rgb(0,71,171,0.67);
+					
+					margin-top: 3rem;
+					font-size: 4vw;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+				
+				.social_buttons {
+					margin-top: 1.5rem;
+					margin-bottom: 1.1rem;
+					color: rgb(0,71,171,0.67);
+				}	
+				
+				.secondary_social_buttons {
+					margin-left: 5rem;
+					margin-right: 5rem;
+					margin-top: 2rem;
+					color: rgb(0,71,171,0.67);
+				}
+			
+				.mobile-margin {
+					margin-top: 6.5rem;
+				}
+				
+				.btn-primary:focus,
+				.btn-primary:hover,
+				.btn-primary.active {
+					background-color: #487eca;
+					border-color: #487eca;
+				}		
+				
+				.btn-group .btn-secondary:active,
+				.btn-secondary:focus,
+				.btn-secondary:hover,
+				.btn-secondary:active,
+				.btn-secondary.active {
+					background-color: #487eca;
+					border-color: #487eca;
+					box-shadow: 0 0 0 0.2rem #e9e3e5; 
+				}		
+					
+			}
+
+		</style>
+	   
+	</head>
+
+	<body>
+
+		<nav class="navbar fixed-top navbar-dark justify-content-between border-bottom border-dark" style="background-color: #0252c4;  border-color: black;">
+			<div class="dropdown">
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"  style="background-color: #1b63ca; border-color: #012e6f;">
+					Menu
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+				<li><a class="dropdown-item dropdowntext" href="index.html">Home</a></li>
+				<li><a class="dropdown-item dropdowntext disabled" href="portfolio.html">Portfolio</a></li>
+				<li><a class="dropdown-item dropdowntext" href="aboutme.html">About Me</a></li>
+				<li><a class="dropdown-item dropdowntext" href="contacts.html">Contacts</a></li>
+				</ul>
+			</div>
+			<a class="navbar-brand ml-auto signature" href="index.html">Shannon Hermes</a>
+		</nav>
+		
+		
+		<div class="card text-white justify-content-center custom_card" id="backtotop">		
+			<div class="card text-white justify-content-center custom_card_contacts">
+				<p class="card-text text-center custom_cardtext1_contacts">Below you’ll find some examples of my work, if you like what<br>you see consider heading over to my “contacts” page to get in<br>touch with me! Beware that some of the images on this page<br>contain sexually explicit content.</p>
+			</div>
+		</div>		
+		
+		
+		<div class="text-center">
+			<a class="btn btn-primary color_button1" href="#fanart" role="button">Fan art</a>
+		</div>	
+		
+		<div class="text-center">
+			<a class="btn btn-primary color_button1" href="#sfwart" role="button">SFW art</a>
+		</div>	
+		
+		<div class="text-center">
+			<a class="btn btn-primary color_button1" href="#nsfwart" role="button">NSFW art</a>
+		</div>	
+	
+		<div class="card text-white justify-content-center custom_card01" id="fanart">		
+			<div class="card text-white justify-content-center custom_card1">
+				<h1	class="card-title text-center custom_cardtext1">Fan art</h1>
+			</div>
+		</div>			
+		
+		<div class="container text-center">
+			<div class="row row-cols-1 row-cols-md-1 g-4">
+			
+				<div class="col">
+					<div class="card">
+						<img src="fanart/kissing.jfif" class="card-img-top" alt="...">
+					</div>
+				</div>
+				
+				<div class="col">
+					<div class="card">
+						<img src="fanart/angelbaby.jfif" class="card-img-top" alt="...">
+					</div>
+				</div>
+				
+				<div class="col">
+					<div class="card">
+						<img src="fanart/spa.jpeg" class="card-img-top" alt="...">
+					</div>
+				</div>
+				
+			</div>
+		</div>	
+
+		<div class="card text-white justify-content-center custom_card0" id="sfwart">		
+			<div class="card text-white justify-content-center custom_card1">
+				<h1	class="card-title text-center custom_cardtext1">SFW art</h1>
+			</div>
+		</div>	
+		
+		<div class="container text-center">
+			<div class="row row-cols-1 row-cols-md-1 g-4">
+			
+				<div class="col">
+					<div class="card">
+						<img src="sfw/lepricon.jfif" class="card-img-top" alt="...">
+					</div>
+				</div>
+				
+				<div class="col">
+					<div class="card">
+						<img src="sfw/smilingman.jpg" class="card-img-top" alt="...">
+					</div>
+				</div>
+				
+				<div class="col">
+					<div class="card">
+						<img src="sfw/chairman.jpeg" class="card-img-top" alt="...">
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="card text-white justify-content-center custom_card0" id="nsfwart">		
+			<div class="card text-white justify-content-center custom_card1">
+				<h1	class="card-title text-center custom_cardtext1">NSFW art</h1>
+			</div>
+		</div>		
+
+		<div class="container text-center">
+			<div class="row row-cols-1 row-cols-md-1 g-4">
+			
+				<div class="col">
+					<div class="card">
+						<img src="nsfw/angelsnsfw.jfif" class="card-img-top" alt="...">
+					</div>
+				</div>
+				
+				<div class="col">
+					<div class="card">
+						<img src="nsfw/angelsnsfw1.jfif" class="card-img-top" alt="...">
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+
+
+		<div class="text-center">
+			<a title="Back To Top" class="btn btn-default secondary_social_buttons" href="#backtotop">
+				<img src="icons/backtotop.png" width="60px" height="60px"> 
+				<br>Back To Top
+			</a>	
+		</div>		
+		
+		<div class="alert alert-warning alert-dismissible fade show fixed-bottom" role="alert">
+			<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+				<symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+				<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+				</symbol>
+			</svg>
+			<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+			<strong>Warning!</strong> This page contains sexually explicit content.
+			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		</div>
+		
+	</body>
+</html>

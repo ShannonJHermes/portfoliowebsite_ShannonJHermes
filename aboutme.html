@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>About Me</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Dancing+Script">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+		<style>
+		
+			.dropdowntext { 
+			color: #0252c4; 
+			}
+			
+			.navbar { 
+			padding-left: 1rem; 
+			}
+
+			.signature {
+				font-family: 'Dancing Script', serif;
+				font-size: 1.5rem;
+			}
+			
+			body { 
+				background-color: #FFFFFF;
+				font-family: 'Noto Serif', serif;
+				margin-top: 3.5rem;
+			}
+			
+			
+			.custom_button {
+				width: 25rem;	
+			}
+
+			.color_button {
+				background: rgb(0,71,171,0.67);
+				border-color: rgb(0,71,171,0.67);
+				
+				margin-top: 4rem;
+			}
+			
+			.color_button1 {
+				background: rgb(0,71,171,0.67);
+				border-color: rgb(0,71,171,0.67);
+				
+				margin-top: 1rem;
+				margin-bottom: 3rem;
+			}
+			
+			.btn-primary:focus,
+			.btn-primary:hover,
+			.btn-primary:active,
+			.btn-primary.active {
+				background-color: #487eca;
+				border-color: #487eca;
+				box-shadow: 0 0 0 0.2rem #e9e3e5;
+			}		
+			
+			.btn-group .btn-secondary:active,
+			.btn-secondary:focus,
+			.btn-secondary:hover,
+			.btn-secondary:active,
+			.btn-secondary.active {
+				background-color: #487eca;
+				border-color: #487eca;
+				box-shadow: 0 0 0 0.2rem #e9e3e5; 
+			}
+			
+			.custom_card {
+				width: 100%;
+				height: 14vw;
+				background: #93B1E5;
+				margin: 0 auto;
+				float: none; 
+				margin-top: 0px;
+				min-height: fit-content;
+				overflow: hidden;
+				line-height: normal;
+				border-radius: 0rem;				
+			}		
+
+			.custom_cardtext {
+				font-size: 4vw;
+				color: rgb(0,71,171);
+				text-overflow: clip;
+				white-space: normal;
+				line-height: normal;
+				font-weight: 650;	
+				max-height: 100%;
+				overflow: hidden;		
+			}		
+			
+			.custom_cardtext1 {
+				font-size: 1.6vw;
+				text-overflow: clip;
+				white-space: normal;
+				line-height: normal;
+				max-height: 100%;
+				overflow: hidden;		
+				padding-bottom: 1rem;				
+			}	
+			
+			.main_text {
+				text-align: center;
+				margin-left: 12.5rem;
+				margin-right: 12.5rem;
+				margin-top: 3rem;
+				color: #0047AB;
+			}
+			
+			@media only screen and (max-width:960px) {
+			
+				body{			
+				background-color: #FFFFFF;
+					}		
+					
+				.navbar { 
+				padding-left: 1rem; 
+				}
+			
+				.dropdowntext { 
+				color: #0252c4; 
+				}
+
+				.custom_card {
+					width: 100%;
+					height: 24vw;
+					background: #93B1E5;
+					margin: 0 auto;
+					float: none; 
+					padding-top: 0;
+					min-height: fit-content;
+					overflow: hidden;
+					line-height: normal;
+					border-radius: 0rem;				
+				}		
+
+				.custom_cardtext {
+					font-size: calc(18px + 3vw);
+					color: rgb(0,71,171);
+					text-overflow: clip;
+					white-space: normal;
+					line-height: normal;
+					font-weight: 650;	
+					max-height: 100%;
+					overflow: hidden;	
+					padding-top: 0.8rem;
+				}		
+				
+				.custom_cardtext1 {
+					font-size: calc(3px + 2.3vw);		
+					text-overflow: clip;
+					white-space: normal;
+					line-height: normal;
+					max-height: 100%;
+					overflow: hidden;						
+					padding-bottom: 1rem;
+				}	
+				
+				.custom_button {
+					width: 15rem;
+					margin: auto;
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+				}
+
+				.color_button {
+					background: rgb(0,71,171,0.67);
+					border-color: rgb(0,71,171,0.67);
+					
+				}
+				
+				.color_button1 {
+					background: rgb(0,71,171,0.67);
+					border-color: rgb(0,71,171,0.67);
+					
+					margin-top: 1rem;
+					margin-bottom: 3rem;
+				}
+				
+				.color_button {
+					background: rgb(0,71,171,0.67);
+					border-color: rgb(0,71,171,0.67);
+					
+					margin-top: 3rem;
+					font-size: 4vw;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+
+				.mobile-margin {
+					margin-top: 6.5rem;
+				}
+				
+				.btn-primary:focus,
+				.btn-primary:hover,
+				.btn-primary.active {
+					background-color: #487eca;
+					border-color: #487eca;
+				}		
+				
+				.btn-group .btn-secondary:active,
+				.btn-secondary:focus,
+				.btn-secondary:hover,
+				.btn-secondary:active,
+				.btn-secondary.active {
+					background-color: #487eca;
+					border-color: #487eca;
+					box-shadow: 0 0 0 0.2rem #e9e3e5; 
+				}		
+				
+				.main_text {
+				text-align: center;
+				margin-left: 2.5rem;
+				margin-right: 2.5rem;
+				margin-top: 1rem;
+				color: #0047AB;
+				}				
+			}
+
+		</style>
+	   
+	</head>
+
+	<body>
+
+		<nav class="navbar fixed-top navbar-dark justify-content-between border-bottom border-dark" style="background-color: #0252c4;  border-color: black;">
+			<div class="dropdown">
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"  style="background-color: #1b63ca; border-color: #012e6f;">
+					Menu
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+				<li><a class="dropdown-item dropdowntext" href="index.html">Home</a></li>
+				<li><a class="dropdown-item dropdowntext" href="portfolio.html">Portfolio</a></li>
+				<li><a class="dropdown-item dropdowntext disabled" href="aboutme.html">About Me</a></li>
+				<li><a class="dropdown-item dropdowntext" href="contacts.html">Contacts</a></li>
+				</ul>
+			</div>
+			<a class="navbar-brand ml-auto signature" href="index.html">Shannon Hermes</a>
+		</nav>
+		
+		
+		<div class="card text-white justify-content-center custom_card">
+			<h1 class="card-title text-center custom_cardtext">Shannon Hermes</h1>
+			<h2 class="card-text text-center custom_cardtext1">Illustrator and comic book artist</h2>
+		</div>
+		
+		<div class="main_text">
+			<h1>Hello!</h1>
+			<p>I’m Shannon, a digital artist.</p>
+			<p>I love superheroes, fantasy and historical settings; I’m currently working  on building my own portfolio with original work but I also love drawing fanarts of my favourite mangas and anime.</p>
+			<p>I’ve worked on a couple of zines and found out I enjoy managing my own projects. I enjoy collaborating with other artists and writers as well; let’s create something amazing together!  </p>
+			<p>You can reach out to me through my contacts page, just shoot me an e-mail or send me a dm on social media! I speak English, Spanish and Italian so understanding eachother won’t be an issue.</p>
+		</div>
+		
+		<div class="text-center">
+			<a class="btn btn-primary color_button1" href="contacts.html" role="button">Contacts</a>
+		</div>	
+		
+	</body>
+</html>
